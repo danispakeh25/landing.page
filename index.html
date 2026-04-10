@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hnanrcc Maison</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Outfit',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#020617;
+color:white;
+overflow-x:hidden;
+}
+
+/* Gradient Background */
+body::before{
+content:'';
+position:fixed;
+width:600px;
+height:600px;
+background:radial-gradient(circle,#2563eb,transparent);
+filter:blur(120px);
+top:-200px;
+left:-200px;
+z-index:-1;
+}
+
+body::after{
+content:'';
+position:fixed;
+width:600px;
+height:600px;
+background:radial-gradient(circle,#0ea5e9,transparent);
+filter:blur(120px);
+bottom:-200px;
+right:-200px;
+z-index:-1;
+}
+
+/* Navbar */
+nav{
+position:fixed;
+width:100%;
+top:0;
+padding:20px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:rgba(2,6,23,0.6);
+backdrop-filter:blur(20px);
+z-index:1000;
+}
+
+.logo{
+font-size:22px;
+font-weight:600;
+background:linear-gradient(90deg,#60a5fa,#22d3ee);
+-webkit-background-clip:text;
+color:transparent;
+}
+
+.nav-links a{
+margin-left:30px;
+text-decoration:none;
+color:#cbd5e1;
+font-weight:400;
+}
+
+.nav-links a:hover{
+color:white;
+}
+
+/* Hero */
+.hero{
+min-height:100vh;
+display:flex;
+align-items:center;
+padding:0 8%;
+}
+
+.hero-content{
+max-width:700px;
+}
+
+.hero h1{
+font-size:64px;
+line-height:1.1;
+margin-bottom:20px;
+background:linear-gradient(90deg,#fff,#60a5fa);
+-webkit-background-clip:text;
+color:transparent;
+}
+
+.hero p{
+color:#94a3b8;
+margin-bottom:30px;
+font-size:18px;
+}
+
+.btn{
+display:inline-block;
+padding:16px 32px;
+background:linear-gradient(90deg,#2563eb,#06b6d4);
+border-radius:12px;
+text-decoration:none;
+color:white;
+font-weight:500;
+transition:.3s;
+}
+
+.btn:hover{
+transform:translateY(-4px);
+box-shadow:0 15px 40px rgba(37,99,235,.4);
+}
+
+/* Sections */
+section{
+padding:120px 8%;
+}
+
+.section-title{
+text-align:center;
+margin-bottom:70px;
+}
+
+.section-title h2{
+font-size:40px;
+margin-bottom:10px;
+}
+
+.section-title p{
+color:#94a3b8;
+}
+
+/* Grid */
+.grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:30px;
+}
+
+.card{
+padding:40px;
+background:rgba(255,255,255,0.03);
+border:1px solid rgba(255,255,255,0.05);
+border-radius:20px;
+backdrop-filter:blur(20px);
+transition:.4s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+border:1px solid rgba(96,165,250,.3);
+}
+
+.card h3{
+margin-bottom:10px;
+}
+
+.card p{
+color:#94a3b8;
+}
+
+/* Pricing */
+.price{
+text-align:center;
+}
+
+.amount{
+font-size:36px;
+margin:15px 0;
+background:linear-gradient(90deg,#60a5fa,#22d3ee);
+-webkit-background-clip:text;
+color:transparent;
+font-weight:600;
+}
+
+/* CTA */
+.cta{
+text-align:center;
+background:linear-gradient(135deg,#1e3a8a,#0ea5e9);
+border-radius:30px;
+}
+
+/* Footer */
+footer{
+padding:50px 8%;
+border-top:1px solid rgba(255,255,255,.1);
+text-align:center;
+}
+
+/* Floating WA */
+.whatsapp{
+position:fixed;
+bottom:25px;
+right:25px;
+padding:18px;
+border-radius:50%;
+background:linear-gradient(135deg,#22c55e,#16a34a);
+color:white;
+font-size:22px;
+text-decoration:none;
+box-shadow:0 15px 30px rgba(0,0,0,.4);
+}
+
+/* Fade Animation */
+.fade{
+opacity:0;
+transform:translateY(40px);
+transition:1s;
+}
+
+.fade.show{
+opacity:1;
+transform:translateY(0);
+}
+
+/* Responsive */
+@media(max-width:900px){
+
+.hero h1{
+font-size:38px;
+}
+
+.grid{
+grid-template-columns:1fr;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+<div class="logo">Hnanrcc Maison</div>
+<div class="nav-links">
+<a href="#layanan">Layanan</a>
+<a href="#portfolio">Portfolio</a>
+<a href="#harga">Harga</a>
+<a href="#kontak">Kontak</a>
+</div>
+</nav>
+
+<section class="hero">
+<div class="hero-content">
+<h1>Butuh Website Cepat Tanpa Ribet?</h1>
+<p>Kami bantu Anda membuat website dan landing page dalam 1–3 hari dengan harga terjangkau.</p>
+<a href="https://wa.me/628976639643" class="btn">Konsultasi Gratis via WhatsApp</a>
+</div>
+</section>
+
+<section class="fade">
+<div class="section-title">
+<h2>Masalah Yang Sering Terjadi</h2>
+</div>
+
+<div class="grid">
+<div class="card">Bingung mulai bikin website</div>
+<div class="card">Biaya developer mahal</div>
+<div class="card">Tidak bisa coding</div>
+<div class="card">Ingin cepat online</div>
+</div>
+
+</section>
+
+<section id="layanan" class="fade">
+<div class="section-title">
+<h2>Layanan Kami</h2>
+</div>
+
+<div class="grid">
+
+<div class="card">
+<h3>Landing Page Profesional</h3>
+<p>Landing page modern dan premium untuk bisnis Anda.</p>
+</div>
+
+<div class="card">
+<h3>Website Portfolio</h3>
+<p>Tampilkan profile profesional secara elegan.</p>
+</div>
+
+<div class="card">
+<h3>Website Monitoring Tahfidz</h3>
+<p>Monitoring hafalan santri modern.</p>
+</div>
+
+</div>
+</section>
+
+<section id="portfolio" class="fade">
+<div class="section-title">
+<h2>Portfolio</h2>
+</div>
+
+<div class="grid">
+<div class="card">Website Monitoring Tahfidz</div>
+<div class="card">Landing Page Jasa</div>
+<div class="card">Website Portfolio</div>
+</div>
+
+</section>
+
+<section id="harga" class="fade">
+<div class="section-title">
+<h2>Harga</h2>
+</div>
+
+<div class="grid">
+
+<div class="card price">
+<h3>Landing Page</h3>
+<div class="amount">99rb</div>
+</div>
+
+<div class="card price">
+<h3>Portfolio</h3>
+<div class="amount">129rb</div>
+</div>
+
+<div class="card price">
+<h3>Monitoring Tahfidz</h3>
+<div class="amount">149rb</div>
+</div>
+
+</div>
+
+</section>
+
+<section class="cta fade">
+<h2>Siap Punya Website Sendiri?</h2>
+<br>
+<a href="https://wa.me/628976639643" class="btn">Hubungi Sekarang</a>
+</section>
+
+<footer id="kontak">
+<h3>Hnanrcc Maison</h3>
+<p>WhatsApp : 08976639643</p>
+<p>Instagram • TikTok • Facebook</p>
+</footer>
+
+<a href="https://wa.me/628976639643" class="whatsapp">💬</a>
+
+<script>
+
+const fade = document.querySelectorAll('.fade');
+
+window.addEventListener('scroll',()=>{
+fade.forEach(el=>{
+const top = el.getBoundingClientRect().top;
+
+if(top < window.innerHeight - 100){
+el.classList.add('show')
+}
+})
+})
+
+</script>
+
+</body>
+</html>
